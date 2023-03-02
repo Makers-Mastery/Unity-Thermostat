@@ -1,9 +1,9 @@
 # Unity-Thermostat
 ## Wireless Unity VR Thermostat Translated to Physical Tempurature Changes Via a Custom Raspberry Pi Thermostat and HTTP Server
 
-Created by Elijah Hansen, in collaboration with Professor Jianli Chen, the University of Utah College of Engineering, and Professor Yangming Shi of the University of Alabama. 
+Created by Elijah Hansen, in collaboration with Professor Jianli Chen, the University of Utah College of Engineering, and Professor Yangming Shi of the University of Alabama. <br>
 <br>
-Special thanks to Miguel Oyarzun for helping set up the Raspberry Pi and debugging the python script.
+Special thanks to Miguel Oyarzun for helping set up the Raspberry Pi and debugging the python script. <br>
 <br>
 In collaboration with Professor Jianli Chen and the University of Utah College of Engineering, I was able to successfully create a Unity
 environment incorporating both SteamVR integration, including snapturning and teleportation, and a VR thermostat which communicated with a Raspberry Pi
@@ -11,7 +11,7 @@ over a HTTP connection. The Raspberry Pi ran a python script which created an HT
 active wireless updating of a virtualTemp value and upon receiving a request or every 15 seconds, use a connected digital temperature module to read the
 room temp and either increase or decrease a stepper motor connected to a space heater in my to increase or decrease the physical temperature in real
 life. In short, I created a VR thermostat and connected it a real thermostat of my design using a Raspberry Pi to turn virtual input into real world
-temperature changes.
+temperature changes. <br>
 <br>
 The project was very challenging at first as I encountered MANY roadblocks on my way to getting the environment to a usable state. I originally
 found out my gaming laptop I was planning on using to run the HTC Vive off of was fundementally incompatible with VR. I ended up solving this by
@@ -30,7 +30,7 @@ and lots of google, I was able to get the server to a point where it was able to
 that was left to do was the motor module. My background is in electrical engineering, so in under 15 minutes I had the temperature sensor and stepper
 motor wired perfectly to the Raspberry Pi and set to writing code for it. I structured the code to run a moveMotor() function, which takes the
 temperature and adjusts the stepper motor accordingly by comparing virtualTemp to realTemp, every time it handles a PUT request and every 15 seconds.
-With some debugging, that concluded the project as I’d accomplished the full scope of the assignment.
+With some debugging, that concluded the project as I’d accomplished the full scope of the assignment. <br>
 <br>
 The source code, unity environment, and python script can all be found on box and on my github 
 @ https://github.com/The-EAR-Foundation/Unity-Thermostat (my github name may change to “Makers-Mastery” in the near future so look out for that). The
